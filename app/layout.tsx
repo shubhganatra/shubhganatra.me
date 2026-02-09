@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   keywords: ["portfolio", "developer", "projects", "experience"],
   authors: [{ name: "Shubh Ganatra" }],
   viewport: "width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
