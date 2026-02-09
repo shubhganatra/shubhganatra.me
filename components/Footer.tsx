@@ -30,7 +30,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-gray-900 dark:text-white mb-4">Connect</h4>
             <ul className="space-y-2">
-              {['LinkedIn', 'GitHub', 'Twitter', 'Email'].map((item) => {
+              {['LinkedIn', 'GitHub', 'Email'].map((item) => {
                 const socialLinks: { [key: string]: string } = {
                   LinkedIn: 'https://www.linkedin.com/in/shubhganatra/',
                   GitHub: 'https://github.com/shubhganatra',
