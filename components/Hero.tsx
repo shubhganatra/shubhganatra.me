@@ -15,7 +15,7 @@ export default function Hero() {
             </h1>
 
             {/* Sub-headline */}
-            <h2 className="text-2xl sm:text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-6">
+            <h2 className="text-base sm:text-xl lg:text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-6">
               <span className="whitespace-nowrap">Software Engineer | Product Manager</span><br />
               Backend Expertise with a Product Focus!
             </h2>
