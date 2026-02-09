@@ -16,7 +16,7 @@ export default function Footer() {
               {['Resume','About', 'Experience', 'Skills', 'Projects'].map((item) => (
                 <li key={item}>
                   <Link
-                    href={item === 'Resume' ? '#' : `#${item.toLowerCase()}`}
+                    href={item === 'Resume' ? '#hero' : `#${item.toLowerCase()}`}
                     className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                   >
                     {item}
