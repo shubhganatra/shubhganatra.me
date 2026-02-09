@@ -10,7 +10,7 @@ export default function Hero() {
           {/* Text Content */}
           <div className="text-center lg:text-left">
             {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-4 text-white leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold mb-4 text-black dark:text-white leading-tight">
               Hi, I'm Shubh! <span className="inline-block" style={{ transform: 'scaleX(-1)' }}>👋🏻</span>
             </h1>
 

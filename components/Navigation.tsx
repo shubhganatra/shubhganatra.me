@@ -24,7 +24,7 @@ export default function Navigation() {
             <div className="w-9 h-9 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 flex items-center justify-center">
               <span className="font-bold text-white text-sm">SG</span>
             </div>
-            <span className="font-bold text-lg text-white dark:text-white">
+            <span className="font-bold text-lg text-black dark:text-white">
               Shubh Ganatra
             </span>
           </Link>
