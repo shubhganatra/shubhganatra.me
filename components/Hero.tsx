@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto w-full animate-fade-in-up">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left">
             {/* Main Heading */}
@@ -16,7 +16,7 @@ export default function Hero() {
 
             {/* Sub-headline */}
             <h2 className="text-2xl sm:text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-6">
-              Software Engineer | Product Manager<br />
+              <span className="whitespace-nowrap">Software Engineer | Product Manager</span><br />
               Backend Expertise with a Product Focus!
             </h2>
 
