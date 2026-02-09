@@ -71,7 +71,7 @@ export default function Contact() {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/yourprofile',
+      href: 'https://github.com/shubhganatra',
       color: 'text-gray-700 dark:text-gray-300'
     }
   ];
