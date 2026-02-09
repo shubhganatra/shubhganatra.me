@@ -34,7 +34,6 @@ export default function Footer() {
                 const socialLinks: { [key: string]: string } = {
                   LinkedIn: 'https://www.linkedin.com/in/shubhganatra/',
                   GitHub: 'https://github.com/shubhganatra',
-                  Twitter: 'https://twitter.com/shubhganatra',
                   Email: 'mailto:shubhganatra@gmail.com',
                 };
                 return (
