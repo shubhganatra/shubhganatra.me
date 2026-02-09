@@ -1,0 +1,8 @@
+Please add your profile photo as "profile.jpg" to the public folder.
+You can do this by:
+1. Save your image as profile.jpg
+2. Place it in the /public directory of your project
+3. The components will automatically use it
+
+Supported formats: .jpg, .png, .webp
+Recommended size: At least 200x200px (preferably 400x400px or higher)
