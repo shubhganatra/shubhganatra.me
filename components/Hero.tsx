@@ -1,10 +1,40 @@
 'use client';
 
-import { ArrowRight } from 'lucide-react';
+import { useEffect, useState } from 'react';
+
+const roles = ['Software', 'Product', 'Forward Deployed'];
+
+function CyclingWord() {
+  const [index, setIndex] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setVisible(false);
+      setTimeout(() => {
+        setIndex((i) => (i + 1) % roles.length);
+        setVisible(true);
+      }, 700); // matches fade duration below
+    }, 2600);
+    return () => clearInterval(id);
+  }, []);
+
+  return (
+    <span
+      className="inline-block"
+      style={{
+        opacity: visible ? 1 : 0,
+        transition: 'opacity 700ms ease-in-out',
+      }}
+    >
+      {roles[index]}
+    </span>
+  );
+}
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 lg:px-8">
+    <section id="hero" className="min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto w-full animate-fade-in-up">
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Text Content */}
@@ -14,15 +44,19 @@ export default function Hero() {
               Hi, I'm Shubh! <span className="inline-block" style={{ transform: 'scaleX(-1)' }}>👋🏻</span>
             </h1>
 
-            {/* Sub-headline */}
-            <h2 className="text-base sm:text-xl lg:text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-6">
-              <span className="whitespace-nowrap">Software Engineer | Product Manager</span><br />
-              Backend Expertise with a Product Focus!
+            {/* Title */}
+            <h2 className="text-lg sm:text-2xl lg:text-3xl font-semibold text-blue-600 dark:text-blue-400 mb-2">
+              <span className="whitespace-nowrap"><CyclingWord /> Engineer</span>
             </h2>
+
+            {/* Sub-headline */}
+            <p className="text-sm sm:text-base lg:text-lg font-medium text-blue-600 dark:text-blue-400 mb-6">
+              Enterprise Engineer with a Business Degree
+            </p>
 
             {/* Main Subtitle */}
             <p className="text-lg sm:text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-              Product-Minded Software Engineer leveraging 2+ years of enterprise backend experience to build 0-to-1 AI solutions. <br /> I combine large-scale Enterprise Systems rigor with Product Strategy to ship tools that solve real user problems.
+              Enterprise Engineer with 2+ years building large-scale backend systems at Oracle, now pairing that foundation with an MS in Management Information Systems to bridge engineering and business strategy. <br /> I architect scalable 0-to-1 prototypes and full-scale solutions that turn ambiguous business challenges into shipped products.
             </p>
 
             {/* CTA Buttons */}
@@ -34,20 +68,12 @@ export default function Hero() {
                 View Projects
               </a>
               <a
-                href="/Shubh Ganatra SDE II.pdf"
+                href="/Shubh Ganatra FDE.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-48 px-6 py-4 border-2 border-blue-500 text-blue-600 dark:text-blue-400 rounded-lg font-semibold hover:bg-blue-50 dark:hover:bg-blue-900/10 transition-colors duration-300 leading-tight line-clamp-2"
+                className="w-full sm:w-40 px-6 py-4 border-2 border-blue-500 text-blue-600 dark:text-blue-400 rounded-lg font-semibold hover:bg-blue-50 dark:hover:bg-blue-900/10 transition-colors duration-300 flex items-center justify-center leading-tight"
               >
-                Hiring for SWE? Look Here!
-              </a>
-              <a
-                href="/Shubh Ganatra CV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-48 px-6 py-4 border-2 border-indigo-500 text-indigo-600 dark:text-indigo-400 rounded-lg font-semibold hover:bg-indigo-50 dark:hover:bg-indigo-900/10 transition-colors duration-300 leading-tight line-clamp-2"
-              >
-                Hiring for PM? This is for you!
+                View Resume
               </a>
             </div>
           </div>

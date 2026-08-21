@@ -5,12 +5,12 @@ export default function Skills() {
     {
       name: 'Full-Stack Engineering',
       icon: '🔧',
-      skills: ['Java', 'Spring Boot', 'Python','FastAPI','React.js', 'TypeScript', 'Next.js', 'Microservices', 'REST APIs', 'PostgreSQL', 'System Design']
+      skills: ['Java', 'Scala', 'Spring Boot', 'Python','FastAPI','React.js', 'TypeScript', 'Next.js', 'Microservices', 'REST APIs', 'PostgreSQL', 'System Design']
     },
     {
       name: 'AI & Prototyping',
       icon: '🤖',
-      skills: ['LLM Integration', 'LangChain', 'RAG Pipelines', 'Groq', 'OpenAI APIs', 'Prompt Engineering', 'Context Engineering', 'Vector DBs']
+      skills: ['Agentic System Design', 'Agent Orchestration', 'Voice Agents', 'LLM Integration', 'LangChain', 'RAG Pipelines', 'Groq', 'OpenAI APIs', 'Claude Code', 'n8n', 'Prompt Engineering', 'Context Engineering', 'Vector DBs']
     },
     {
       name: 'Cloud & DevOps',
@@ -18,9 +18,9 @@ export default function Skills() {
       skills: ['AWS', 'EC2', 'S3', 'Docker', 'Kubernetes', 'CI/CD Automation', 'Linux', 'Bash', 'YAML']
     },
     {
-      name: 'Product Strategy',
+      name: 'Product & FDE Skills',
       icon: '📊',
-      skills: ['0-to-1 Development', 'UAT', 'MVP Scoping', 'Technical Feasibility Analysis', 'Agile', 'Scrum', 'A/B Testing', 'User Research', 'Customer Discovery']
+      skills: ['0-to-1 Development', 'Customer Demo', 'Requirement Gathering', 'UAT', 'MVP Scoping', 'Market Analysis', 'Technical Feasibility Analysis', 'Agile', 'Scrum', 'A/B Testing', 'User Research', 'Customer Discovery']
     }
   ];
 

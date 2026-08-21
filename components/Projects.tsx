@@ -5,12 +5,25 @@ import { ExternalLink, Github } from 'lucide-react';
 export default function Projects() {
   const projects = [
     {
+      title: 'Alixa',
+      oneLinier: 'Multi-agent voice customer service system that autonomously resolves support workflows.',
+      description: [
+        'Architected a multi-agent voice customer service system to understand, analyze & make strategic account decisions, cutting human hours by 50%+.',
+        'Built an agentic architecture for conversational tasks using tool calling across Deepgram Flux, Vapi, ElevenLabs, Node.js & PostgreSQL.',
+        'Designed an Impact vs. Reversibility Matrix deciding which tasks the agent handles autonomously vs. routes to a human-in-the-loop, backed by evals & guardrails for regulated environments.'
+      ],
+      tags: ['Voice AI', 'Agentic Architecture', 'Tool Calling', 'Evals & Guardrails', 'Hackathon Winner'],
+      link: 'https://github.com/ShejalShankar/alix-hackathon',
+      github: 'https://github.com/ShejalShankar/alix-hackathon'
+    },
+    {
       title: 'TechStack.Studio',
       oneLinier: 'Solving developer "analysis paralysis" by generating optimal tech stacks via AI.',
       description: [
         'Architected a zero-to-one platform using LangChain & Groq to generate instant architectural blueprints from vague user prompts.',
         'Tech: Designed a hot-swappable LLM backend to balance token cost vs. response latency.',
-        'Product: Validated the "Blank Canvas" problem and shipped a full-stack MVP (React/FastAPI) to solve it.'
+        'Product: Validated the "Blank Canvas" problem and shipped a full-stack MVP (React/FastAPI) to solve it.',
+        'Engineered architecture diagrams via MermaidJS based on App Type, Usage Scale & Security Requirements.'
       ],
       tags: ['GenAI', 'Product Engineering', 'LLM', 'Python', 'FastAPI', 'Next.js'],
       link: 'https://techstack.studio',
@@ -18,13 +31,13 @@ export default function Projects() {
     },
     {
       title: 'Tohfa',
-      oneLinier: 'A customized gifting recommendation platform built from scratch.',
+      oneLinier: 'AI gifting platform that reads emotion, budget & occasion to recommend the perfect gift.',
       description: [
-        'Led the full product lifecycle from ideation to MVP Launch.',
-        'Conducted 80+ user interviews to define the core value proposition & Customer\'s JTBD (Jobs To Be Done) map.',
-        'Engineered the scalable MVP infrastructure and managed the roadmap for a cross-functional team.'
+        'Designed an AI solution that analyzes user emotions, relationships, budget & urgency via sentiment analysis to recommend the perfect gift, spanning the full journey from selection to delivery.',
+        'Led 80+ discovery sessions with customers to identify pain points & requirements, translating findings into business strategy.',
+        'Shipped customer demonstrations & proof-of-concepts within a 3-week sprint to validate product-market fit through rapid prototyping.'
       ],
-      tags: ['0-to-1', 'AI Consumer App','Customer Discovery', 'MVP Development', 'Product Strategy'],
+      tags: ['0-to-1', 'Sentiment Analysis','Customer Discovery', 'Rapid Prototyping', 'Product Strategy'],
       link: '#',
       github: '#'
     },

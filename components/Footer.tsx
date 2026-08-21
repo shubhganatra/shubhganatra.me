@@ -16,7 +16,9 @@ export default function Footer() {
               {['Resume','About', 'Experience', 'Skills', 'Projects'].map((item) => (
                 <li key={item}>
                   <Link
-                    href={item === 'Resume' ? '#hero' : `#${item.toLowerCase()}`}
+                    href={item === 'Resume' ? '/Shubh Ganatra FDE.pdf' : `#${item.toLowerCase()}`}
+                    target={item === 'Resume' ? '_blank' : undefined}
+                    rel={item === 'Resume' ? 'noopener noreferrer' : undefined}
                     className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                   >
                     {item}
@@ -34,7 +36,7 @@ export default function Footer() {
                 const socialLinks: { [key: string]: string } = {
                   LinkedIn: 'https://www.linkedin.com/in/shubhganatra/',
                   GitHub: 'https://github.com/shubhganatra',
-                  Email: 'mailto:shubhganatra@gmail.com',
+                  Email: 'mailto:ganatra.shubh611@gmail.com',
                 };
                 return (
                   <li key={item}>

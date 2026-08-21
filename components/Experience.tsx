@@ -3,21 +3,25 @@
 export default function Experience() {
   const experiences = [
     {
-      title: 'Associate Applications Developer',
-      company: 'Oracle Financial Services Software',
+      title: 'Product Engineer',
+      company: 'Oracle',
       period: 'July 2022 – July 2024',
       logo: '/oracle.png',
       logoColor: 'from-red-500 to-red-600',
-      highlights: ['FinTech', 'SaaS', 'Java', 'Scala', 'JavaScript', 'GitCloud', 'REST API Tuning', 'CI/CD Automation'],
-      description: 'Engineered critical FinTech SaaS products managing global banking cash flows.',
+      highlights: ['FinTech', 'SaaS', 'Java', 'Scala', 'Oracle SQL', 'Docker', 'Prometheus', 'CI/CD Automation'],
+      description: 'Developed & managed full-stack enterprise SaaS products for Cash Flow & Asset Liability Management operations across global banks.',
       sections: [
         {
           heading: 'Engineering Impact',
-          content: 'Optimized API latency by 58% via JVM tuning and asynchronous processing, directly improving system throughput.'
+          content: 'Optimized API response times by 58% (measured via Prometheus) and architected Docker-containerized backend workflows that held 99.9% production uptime on legacy microservices while integrating modern REST APIs.'
         },
         {
           heading: 'Product Impact',
-          content: 'Led User Acceptance Testing (UAT) for new forecasting modules, bridging the gap between technical implementation and business requirements to drive 30% user adoption.'
+          content: 'Acted as primary liaison across 4 cross-functional teams, translating product requirements into technical specs and leading User Acceptance Testing (UAT) that drove 30% user growth.'
+        },
+        {
+          heading: 'Feature Delivery',
+          content: 'Launched Pricing Margin Forecasting and Managed Rates Analysis features, turning complex JWT/XML financial data retrieval into client-facing modules with a 30% cut in latency.'
         },
         {
           heading: 'Automation',
@@ -26,25 +30,29 @@ export default function Experience() {
       ]
     },
     {
-      title: 'Software Engineer Intern',
+      title: 'Technology Consultant Intern',
       company: 'PricewaterhouseCoopers (PwC)',
       period: 'May 2021 – July 2021',
       logo: '/pwc.jpg',
       logoColor: 'from-amber-600 to-amber-700',
-      highlights: ['Data Analytics', 'C#', 'Python', 'React', 'Business Intelligence', 'Dashboarding'],
-      description: 'Spearheaded technical development for internal data tools, focusing on integrity and actionable insights.',
+      highlights: ['Data Analytics', 'C#', 'ReactJS', 'Python', 'Fraud Detection', 'Agile'],
+      description: 'Revamped Predictive Business Analytics dashboards for Transaction Risk Management, supporting client business strategy.',
       sections: [
         {
           heading: 'Digital Transformation',
-          content: 'Owned the end-to-end transformation of Transaction Risk Management & Fraud Detection dashboards. Evaluated technical solutions and prioritized features to visualize predictive data, improving decision-making speed by 30%.'
+          content: 'Revamped the Predictive Business Analytics dashboard for the Transaction Risk Management application, converting raw data into comprehensive graphical reports that boosted the Fraud Detection rate by 50%.'
         },
         {
           heading: 'Engineering Resolution',
-          content: 'Resolved critical C# / .NET integration bottlenecks to ensure 100% data integrity for downstream financial reporting.'
+          content: 'First intern in the cohort to lead a 7-member team task force, troubleshooting and resolving C# & ReactJS integration issues to eliminate application downtime.'
         },
         {
           heading: 'Feature Innovation',
-          content: 'Engineered a custom \'Twitter Analytics\' add-on, implementing sentiment analysis algorithms to scrape and visualize real-time brand perception data for clients.'
+          content: 'Built a Twitter Data Analytics add-on for user sentiment analysis, boosting decision speed by 30% via React, Python & Twitter APIs.'
+        },
+        {
+          heading: 'Process Improvement',
+          content: 'Enhanced team velocity by 15% by incorporating Agile project management tools like MS Project for effective KPI tracking.'
         }
       ]
     }

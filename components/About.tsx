@@ -12,7 +12,7 @@ export default function About() {
           {/* Text Content */}
           <div className="space-y-6 mb-12">
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed font-semibold">
-              I don't just write code; I build products that solve real-world problems.
+              I'm a Product Engineer bridging the gap between complex enterprise engineering & client-centric product delivery.
             </p>
             
             <div>
@@ -30,7 +30,7 @@ export default function About() {
             </div>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              Now, I operate at the intersection of System Design and Product Strategy. I specialize in 0-to-1 development, leveraging Generative AI to translate complex technical capabilities into intuitive, user-centric tools. I bring the technical rigor to build scalable systems and the product vision to ensure they deliver tangible business value.
+              Now, I operate as a Forward Deployed Engineer at the intersection of enterprise systems and product strategy. I architect scalable 0-to-1 prototypes and full-scale solutions, leveraging Generative AI to translate ambiguous business challenges into intuitive, user-centric tools. I bring the technical rigor to build scalable systems and the product vision to ensure they deliver tangible business value.
             </p>
           </div>
 
